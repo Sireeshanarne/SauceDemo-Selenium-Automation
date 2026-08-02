@@ -19,7 +19,7 @@ jobs:
       - name: Run Selenium login test
         run: |
           python login_test.py
-          - name: SonarQube Cloud Scan
+      - name: SonarQube Cloud Scan
         uses: SonarSource/sonarqube-scan-action@v5
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
